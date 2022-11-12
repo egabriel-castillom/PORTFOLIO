@@ -1,0 +1,118 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+
+.content{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: .5fr .5fr .5fr .5fr .5fr 3fr;  
+    animation-duration: 2s;
+}
+
+.content .titulo{
+    font-family: "Vibur", sans-serif;
+    font-size: 300px;
+    text-align: center;
+    background: url('wall.jpg');
+    animation-name: opacity;
+    animation-duration: 2s;
+    color: #fff;
+    padding: 100px;
+    animation: pulsate 0.11s ease-in-out infinite alternate;    
+}
+@keyframes pulsate {
+    100% {
+      /* Larger blur radius */
+      text-shadow:
+        0 0 4px #fff,
+        0 0 11px #fff,
+        0 0 19px #fff,
+        0 0 40px #0fa,
+        0 0 80px #0fa,
+        0 0 90px #0fa,
+        0 0 100px #0fa,
+        0 0 150px #0fa;
+    }
+   0% {
+      /* A slightly smaller blur radius */
+      text-shadow:
+        0 0 4px #fff,
+        0 0 10px #fff,
+        0 0 18px #fff,
+        0 0 38px #0fa,
+        0 0 73px #0fa,
+        0 0 80px #0fa,
+        0 0 94px #0fa,
+        0 0 140px #0fa;
+    }
+  }
+@keyframes opacity{
+    0%{opacity:0;}
+    100%{opacity:1;}
+}
+
+.content .imagen{
+    text-align: center;
+    background:linear-gradient(to bottom, #010a01 50%,white 50%) ;
+    animation-name: opacity;
+    animation-duration: 2s;
+}
+
+.content .im1{
+    width: 600px;
+    height: 600px;
+    border-radius: 400px;
+    border: solid;
+    box-shadow: 1px 1px;
+}
+
+.content .presentacion{
+    margin-top: 1%;
+    font-size: 80px;
+    text-align: center;
+    animation-name: opacity;
+    animation-duration: 2s;
+}
+
+.content .introduccion{
+    font-size: 90px;
+    text-align: center;
+    animation-name: opacity;
+    animation-duration: 2s;
+}
+
+.content .experiencia{
+    font-size: 50px;
+}
+
+.content .experiencia .j1{
+    margin-bottom: 1%;
+    border: solid;
+    animation-name: opacity;
+    animation-duration: 2s;
+    background: linear-gradient(to bottom,darkgreen,rgb(2, 181, 2)); 
+    padding: 40px;
+    color: aliceblue;
+}
+
+.content .experiencia h2 {
+    text-align: right;
+}
+
+.content .experiencia p {
+    text-align: center;
+}
+
+.content .experiencia .j2{
+    margin-bottom: 1%;
+    border: solid;
+    animation-name: opacity;
+    animation-duration: 2s;
+    background: linear-gradient(to bottom,rgb(100, 62, 0),rgb(181, 77, 2)); 
+    padding: 40px;
+    color: aliceblue;
+}
